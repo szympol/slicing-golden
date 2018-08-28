@@ -1,3 +1,5 @@
 * { box-sizing: border-box; font-family: Amatic SC, cursive; }
+
 .row:before, .row:after { content: ""; display: table; clear: both; }
+
 body { margin: 0 auto; }
