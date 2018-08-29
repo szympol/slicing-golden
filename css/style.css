@@ -1,5 +1,15 @@
-* { box-sizing: border-box; font-family: Amatic SC, cursive; }
+* { box-sizing: border-box; font-family: "Open Sans", sans-serif; }
 
 .row:before, .row:after { content: ""; display: table; clear: both; }
 
 body { margin: 0 auto; }
+
+.jumbotron { height: 100vh; background-image: url(../images/background.jpg); position: relative; background-size: cover; overflow: hidden; -o-object-fit: cover; object-fit: cover; }
+
+#navbar-brand--overrides { color: #fed136; font-family: "Dancing Script", cursive; font-size: 40px; }
+
+.navbar-collapse ul li > a { text-transform: uppercase; padding-right: 20px; padding-left: 20px; color: #fff; transition: all .2s ease-in-out; }
+
+.navbar-collapse ul li > a:hover { background: transparent; color: #fed136; transform: scale(1.2); }
+
+.navbar-toggle .icon-bar { background: #fff; color: #fed136; }
