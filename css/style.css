@@ -24,9 +24,30 @@ body { margin: 0 auto; }
 
 .background > .btn, .background .btn-lg { padding: 25px 65px; background: #fed136; font-weight: bold; font-family: "Montserrat", sans-serif; margin-top: 30px; }
 
-.section-paddingTopBottom { padding: 0 100px; }
+.section-paddingTopBottom { padding: 100px 0; }
+
+.services > p:first-child { font-size: 40px; font-family: "Montserrat", sans-serif; font-weight: 700; text-transform: uppercase; }
+
+.services > p:nth-child(2) { font-size: 16px; font-family: "Montserrat", sans-serif; font-style: italic; color: #777; }
+
+.fa { border-radius: 50%; border: 3px solid #fed136; font-size: 40px; color: #fed136; line-height: 80px; width: 80px; height: 80px; margin-bottom: 20px; transition: all .2s ease-in-out; }
+
+.fa:hover { background: #fed136; color: #fff; }
+
+.iconsText { margin-top: 80px; }
+
+.iconsText div > p:nth-child(2) { font-size: 18px; font-family: "Montserrat", sans-serif; font-weight: 700; text-transform: capitalize; }
+
+.iconsText div > p:nth-child(3) { font-size: 14px; font-family: "Montserrat", sans-serif; color: #777; }
+
+.section-paddingTopBottom--background { background-color: #F7F7F7; }
 
 @media only screen and (max-width: 768px) { .navbar-collapse ul { overflow: hidden; }
   .navbar-collapse ul li > a { color: #fff; transition: none; }
   .navbar-collapse ul li > a:hover { background: rgba(0, 0, 0, 0); color: #fff; transform: scale(1); }
-  .background { margin-top: 10vh; } }
+  .background { margin-top: 10vh; }
+  .fa { margin-top: 30px; }
+  .iconsText { margin-top: 30px; } }
+
+@media only screen and (max-width: 992px) { .fa { margin-top: 30px; }
+  .iconsText { margin-top: 30px; } }
