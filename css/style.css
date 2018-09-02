@@ -30,15 +30,15 @@ body { margin: 0 auto; }
 
 .services > p:nth-child(2) { font-size: 16px; font-family: "Montserrat", sans-serif; font-style: italic; color: #777; }
 
-.fa { border-radius: 50%; border: 3px solid #fed136; font-size: 40px; color: #fed136; line-height: 80px; width: 80px; height: 80px; margin-bottom: 20px; transition: all .2s ease-in-out; }
-
-.fa:hover { background: #fed136; color: #fff; }
-
 .iconsText { margin-top: 80px; }
 
 .iconsText div > p:nth-child(2) { font-size: 18px; font-family: "Montserrat", sans-serif; font-weight: 700; text-transform: capitalize; }
 
 .iconsText div > p:nth-child(3) { font-size: 16px; font-family: "Montserrat", sans-serif; font-style: italic; color: #777; }
+
+.iconsText div .fa { border-radius: 50%; border: 3px solid #fed136; font-size: 40px; color: #fed136; line-height: 80px; width: 80px; height: 80px; margin-bottom: 20px; transition: all .2s ease-in-out; }
+
+.iconsText div .fa:hover { background: #fed136; color: #fff; }
 
 .section-paddingTopBottom--background { background-color: #F7F7F7; }
 
@@ -70,12 +70,34 @@ body { margin: 0 auto; }
 
 .history--line > div:nth-of-type(2) { border-left: 1px solid #F7F7F7; min-height: 70px; }
 
+.workers { margin-top: 70px; }
+
+.workers > div { margin-bottom: 30px; }
+
+.workers > div > img { height: 260px; width: 260px; -o-object-fit: cover; object-fit: cover; border-radius: 50%; border: 10px solid #fff; }
+
+.workers > div > p:nth-child(2) { font-size: 18px; font-family: "Montserrat", sans-serif; font-weight: 700; text-transform: capitalize; font-size: 16px; margin: 10px -5px 0; }
+
+.workers > div > p:nth-child(3) { font-size: 14px; font-family: "Montserrat", sans-serif; color: #777; text-transform: capitalize; }
+
+.workers > div div div .fa-twitter { width: 40px; height: 40px; border-radius: 50%; border: 3px solid #000; font-size: 25px; color: #000; line-height: 40px; transition: all .2s ease-in-out; }
+
+.workers > div div div .fa-twitter:hover { background: #00aced; color: #fff; border-color: #00aced; }
+
+.workers > div div div .fa-facebook-f { width: 40px; height: 40px; border-radius: 50%; border: 3px solid #000; font-size: 25px; color: #000; line-height: 40px; transition: all .2s ease-in-out; }
+
+.workers > div div div .fa-facebook-f:hover { background: #3b5998; color: #fff; border-color: #3b5998; }
+
+.workers > div div div .fa-pinterest-p { width: 40px; height: 40px; border-radius: 50%; border: 3px solid #000; font-size: 25px; color: #000; line-height: 40px; transition: all .2s ease-in-out; }
+
+.workers > div div div .fa-pinterest-p:hover { background: #c8232c; color: #fff; border-color: #c8232c; }
+
 @media only screen and (max-width: 768px) { .navbar-collapse ul { overflow: hidden; }
   .navbar-collapse ul li > a { color: #fff; transition: none; }
   .navbar-collapse ul li > a:hover { background: rgba(0, 0, 0, 0); color: #fff; transform: scale(1); }
   .background { margin-top: 4vh; }
-  .fa { margin-top: 30px; }
   .iconsText { margin-top: 30px; }
+  .iconsText div .fa { margin-top: 30px; }
   .images > div:nth-of-type(1) { margin-bottom: 0px; }
   .images > div > div { margin-bottom: 30px; }
   .history div { text-align: center; /*img::before{ content: ""; display: block; height: 1px; width: 60%; position: absolute; top: -1px; left: 0; background-color: $section-paddingTopBottom--background; } img::after{ content: ""; display: block; height: 1px; width: 60%; position: absolute; bottom: -1px; left: 0; background-color: $section-paddingTopBottom--background; }*/ }
@@ -87,8 +109,8 @@ body { margin: 0 auto; }
   .flexbox .flexbox--3 { -ms-flex-order: 3; order: 3; -ms-flex: 1 0 100%; flex: 1 0 100%; } }
 
 /*  .history { .test { left: 70%; } .test1{ right: 25%; } .test2{ right: 0%; } }*/
-@media only screen and (max-width: 992px) { .fa { margin-top: 30px; }
-  .iconsText { margin-top: 30px; }
+@media only screen and (max-width: 992px) { .iconsText { margin-top: 30px; }
+  .iconsText div .fa { margin-top: 30px; }
   .history--line { height: 150px; }
   .history--line > div:nth-of-type(1) { border-right: 1px solid #F7F7F7; min-height: 150px; }
   .history--line > div:nth-of-type(2) { border-left: 1px solid #F7F7F7; min-height: 150px; } }

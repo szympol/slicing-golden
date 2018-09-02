@@ -1,6 +1,10 @@
 $golden: #fed136;
 $white: #fff;
 $smallText: #777;
+$black: #000;
+$twitter: #00aced;
+$facebook: #3b5998;
+$pinterest: #c8232c;
 $dancingScript: 'Dancing Script', cursive;
 $openSans: 'Open Sans', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
@@ -114,7 +118,17 @@ body { margin: 0 auto;}
     @include smallText;
   }
 }
-.fa {
+
+.iconsText {
+  margin-top: 80px;
+  div {
+    >p:nth-child(2){
+      @include smallTitle;
+    }
+    >p:nth-child(3){
+      @include smallText;
+    }
+    .fa {
   border-radius: 50%;
   border: 3px solid $golden;
   font-size: 40px;
@@ -129,15 +143,6 @@ body { margin: 0 auto;}
       color: $white;
     }
 }
-.iconsText {
-  margin-top: 80px;
-  div {
-    >p:nth-child(2){
-      @include smallTitle;
-    }
-    >p:nth-child(3){
-      @include smallText;
-    }
   }
 }
 .section-paddingTopBottom--background{
@@ -195,6 +200,79 @@ body { margin: 0 auto;}
     min-height: 70px;
   }
 }
+.workers {
+  margin-top: 70px;
+  > div {
+    margin-bottom: 30px;
+    > img {
+      height: 260px;
+      width: 260px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 10px solid $white;
+      }
+    >p:nth-child(2){
+      @include smallTitle;
+      font-size: 16px;
+      margin: 10px -5px 0;
+    }
+    >p:nth-child(3){
+      @include description;
+      text-transform: capitalize; 
+    }
+    div {
+      div{
+        .fa-twitter{
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 3px solid $black;
+          font-size: 25px;
+          color: $black;
+          line-height: 40px;
+          transition: all .2s ease-in-out;
+          &:hover {
+            background: $twitter;
+            color: $white;
+            border-color: $twitter;
+          }
+        }
+        .fa-facebook-f{
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 3px solid $black;
+          font-size: 25px;
+          color: $black;
+          line-height: 40px;
+          transition: all .2s ease-in-out;
+          &:hover {
+            background: $facebook;
+            color: $white;
+            border-color: $facebook;
+          }
+        }
+        .fa-pinterest-p{
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 3px solid $black;
+          font-size: 25px;
+          color: $black;
+          line-height: 40px;
+          transition: all .2s ease-in-out;
+          &:hover {
+            background: $pinterest;
+            color: $white;
+            border-color: $pinterest;
+          }
+        }
+      }
+    }
+  }
+
+}    
+
 
 @media only screen and (max-width: 768px) {
   .navbar-collapse {
@@ -216,11 +294,13 @@ body { margin: 0 auto;}
   .background {
     margin-top: 4vh;
   }
-  .fa {
-    margin-top: 30px;
-  }
   .iconsText {
     margin-top: 30px;
+    div {
+        .fa {
+    margin-top: 30px;
+  }
+    }
   }
   .images {
     > div:nth-of-type(1){
@@ -292,11 +372,13 @@ body { margin: 0 auto;}
     }
   }*/
 @media only screen and (max-width: 992px){
-  .fa {
-    margin-top: 30px;
-  }
   .iconsText {
     margin-top: 30px;
+    div {
+        .fa {
+    margin-top: 30px;
+  }
+    }
   }
   .history--line {
   height: 150px;
