@@ -5,6 +5,7 @@ $black: #000;
 $twitter: #00aced;
 $facebook: #3b5998;
 $pinterest: #c8232c;
+$footer: #555;
 $dancingScript: 'Dancing Script', cursive;
 $openSans: 'Open Sans', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
@@ -275,7 +276,7 @@ body { margin: 0 auto;}
   padding: 50px 0;
 }
 .form-background {
-    height: 100vh;
+    height: 90vh;
   background-image: url(../images/MapImage.jpg); 
   position: relative;
   background-size: cover;
@@ -320,8 +321,36 @@ body { margin: 0 auto;}
       font-family: $montserrat;
       font-weight: 700;
     }
+    button {
+      padding: 25px 65px;
+      background: $golden;
+      font-weight: bold;
+      font-family: $montserrat;
+      margin-top: 30px;
+      color: $white;
+    }
   } 
 }
+
+footer {
+  padding: 30px 40px 0;
+  height: 10vh;
+  div{
+    div {
+      div {
+        div{
+          > p {
+    color: $footer;
+    font-family: $montserrat;
+    font-size: 14px;
+
+        }
+      }
+    }
+    } 
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   .navbar-collapse {

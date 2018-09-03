@@ -94,7 +94,7 @@ body { margin: 0 auto; }
 
 .logos { padding: 50px 0; }
 
-.form-background { height: 100vh; background-image: url(../images/MapImage.jpg); position: relative; background-size: cover; background-position: center bottom; overflow: hidden; -o-object-fit: cover; object-fit: cover; }
+.form-background { height: 90vh; background-image: url(../images/MapImage.jpg); position: relative; background-size: cover; background-position: center bottom; overflow: hidden; -o-object-fit: cover; object-fit: cover; }
 
 .form-background div div div > p:first-child { color: #fff; }
 
@@ -107,6 +107,12 @@ body { margin: 0 auto; }
 .form-horizontal div div div:nth-of-type(2) > .form-control, .form-horizontal div div div:nth-of-type(3) > .form-control { margin-top: -10px; height: 54px; color: #F7F7F7; font-family: "Montserrat", sans-serif; font-weight: 700; }
 
 .form-horizontal div textarea { color: #F7F7F7; font-family: "Montserrat", sans-serif; font-weight: 700; }
+
+.form-horizontal div button { padding: 25px 65px; background: #fed136; font-weight: bold; font-family: "Montserrat", sans-serif; margin-top: 30px; color: #fff; }
+
+footer { padding: 30px 40px 0; height: 10vh; }
+
+footer div div div div > p { color: #555; font-family: "Montserrat", sans-serif; font-size: 14px; }
 
 @media only screen and (max-width: 768px) { .navbar-collapse ul { overflow: hidden; }
   .navbar-collapse ul li > a { color: #fff; transition: none; }
