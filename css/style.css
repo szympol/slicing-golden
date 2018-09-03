@@ -92,6 +92,22 @@ body { margin: 0 auto; }
 
 .workers > div div div .fa-pinterest-p:hover { background: #c8232c; color: #fff; border-color: #c8232c; }
 
+.logos { padding: 50px 0; }
+
+.form-background { height: 100vh; background-image: url(../images/MapImage.jpg); position: relative; background-size: cover; background-position: center bottom; overflow: hidden; -o-object-fit: cover; object-fit: cover; }
+
+.form-background div div div > p:first-child { color: #fff; }
+
+.form-horizontal { margin-top: 80px; }
+
+.form-horizontal div div div:first-child { margin-top: -19px; }
+
+.form-horizontal div div div:first-child > .form-control { height: 54px; color: #F7F7F7; font-family: "Montserrat", sans-serif; font-weight: 700; }
+
+.form-horizontal div div div:nth-of-type(2) > .form-control, .form-horizontal div div div:nth-of-type(3) > .form-control { margin-top: -10px; height: 54px; color: #F7F7F7; font-family: "Montserrat", sans-serif; font-weight: 700; }
+
+.form-horizontal div textarea { color: #F7F7F7; font-family: "Montserrat", sans-serif; font-weight: 700; }
+
 @media only screen and (max-width: 768px) { .navbar-collapse ul { overflow: hidden; }
   .navbar-collapse ul li > a { color: #fff; transition: none; }
   .navbar-collapse ul li > a:hover { background: rgba(0, 0, 0, 0); color: #fff; transform: scale(1); }
@@ -106,7 +122,8 @@ body { margin: 0 auto; }
   .flexbox { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-direction: row; flex-direction: row; }
   .flexbox .flexbox--1 { -ms-flex-order: 1; order: 1; -ms-flex: 1 0 100%; flex: 1 0 100%; }
   .flexbox .flexbox--2 { -ms-flex-order: 2; order: 2; -ms-flex: 1 0 100%; flex: 1 0 100%; }
-  .flexbox .flexbox--3 { -ms-flex-order: 3; order: 3; -ms-flex: 1 0 100%; flex: 1 0 100%; } }
+  .flexbox .flexbox--3 { -ms-flex-order: 3; order: 3; -ms-flex: 1 0 100%; flex: 1 0 100%; }
+  .logos div div div img { width: 90%; height: 90%; } }
 
 /*  .history { .test { left: 70%; } .test1{ right: 25%; } .test2{ right: 0%; } }*/
 @media only screen and (max-width: 992px) { .iconsText { margin-top: 30px; }
@@ -114,3 +131,5 @@ body { margin: 0 auto; }
   .history--line { height: 150px; }
   .history--line > div:nth-of-type(1) { border-right: 1px solid #F7F7F7; min-height: 150px; }
   .history--line > div:nth-of-type(2) { border-left: 1px solid #F7F7F7; min-height: 150px; } }
+
+.logos div div div img { width: 90%; height: 90%; }
