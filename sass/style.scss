@@ -7,20 +7,20 @@ $facebook: #3b5998;
 $pinterest: #c8232c;
 $googlePlus: #d34836;
 $footer: #555;
-$dancingScript: 'Dancing Script', cursive;
-$openSans: 'Open Sans', sans-serif;
-$montserrat: 'Montserrat', sans-serif;
-$section-paddingTopBottom--background: #F7F7F7;
+$dancingScript: "Dancing Script", cursive;
+$openSans: "Open Sans", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+$section-paddingTopBottom--background: #f7f7f7;
 @mixin smallText {
-    font-size: 16px;
-    font-family: $montserrat;
-    font-style: italic;
-    color:$smallText;
+  font-size: 16px;
+  font-family: $montserrat;
+  font-style: italic;
+  color: $smallText;
 }
 @mixin description {
   font-size: 14px;
   font-family: $montserrat;
-  color:$smallText;
+  color: $smallText;
 }
 @mixin smallTitle {
   font-size: 18px;
@@ -28,21 +28,30 @@ $section-paddingTopBottom--background: #F7F7F7;
   font-weight: 700;
   text-transform: capitalize;
 }
-@mixin title{
+@mixin title {
   font-size: 40px;
-    font-family: $montserrat;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
+  font-family: $montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-
-* { box-sizing: border-box; font-family: $openSans; }
-.row:before, .row:after { content: ""; display: table; clear: both; }
-body { margin: 0 auto;}
+* {
+  box-sizing: border-box;
+  font-family: $openSans;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  margin: 0 auto;
+}
 
 .jumbotron {
   height: 100vh;
-  background-image: url(../images/background.jpg); 
+  background-image: url(../images/background.jpg);
   position: relative;
   background-size: cover;
   background-position: center bottom;
@@ -55,32 +64,31 @@ body { margin: 0 auto;}
   font-size: 40px;
 }
 .navbar-collapse {
-  
   ul {
     li {
       > a {
-          text-transform: uppercase;
-          padding-right: 20px;
-          padding-left: 20px;
-          color: $white;
-          transition: all .2s ease-in-out;
-          &:hover {
-                background: transparent;
-                color: $golden;
-                transform: scale(1.2);
-          }
+        text-transform: uppercase;
+        padding-right: 20px;
+        padding-left: 20px;
+        color: $white;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background: transparent;
+          color: $golden;
+          transform: scale(1.2);
+        }
       }
     }
-  } 
+  }
 }
 .navbar-nav > li > a:focus {
-    background-color: transparent; //yellow
-    color: $golden;
+  background-color: transparent; //yellow
+  color: $golden;
 }
 
 .navbar-toggle .icon-bar {
-        background:$golden;
-      }
+  background: $golden;
+}
 
 .background {
   margin-top: 29vh;
@@ -100,13 +108,14 @@ body { margin: 0 auto;}
     text-transform: uppercase;
     margin-top: 20px;
   }
-  >.btn, .btn-lg {
-  padding: 25px 65px;
-  background: $golden;
-  font-weight: bold;
-  font-family: $montserrat;
-  margin-top: 30px;
-}
+  > .btn,
+  .btn-lg {
+    padding: 25px 65px;
+    background: $golden;
+    font-weight: bold;
+    font-family: $montserrat;
+    margin-top: 30px;
+  }
 }
 
 .section-paddingTopBottom {
@@ -116,7 +125,7 @@ body { margin: 0 auto;}
   > p:first-child {
     @include title;
   }
-  > p:nth-child(2){
+  > p:nth-child(2) {
     @include smallText;
   }
 }
@@ -124,35 +133,35 @@ body { margin: 0 auto;}
 .iconsText {
   margin-top: 80px;
   div {
-    >p:nth-child(2){
+    > p:nth-child(2) {
       @include smallTitle;
     }
-    >p:nth-child(3){
+    > p:nth-child(3) {
       @include smallText;
     }
     .fa {
-  border-radius: 50%;
-  border: 3px solid $golden;
-  font-size: 40px;
-  color: $golden;
-  line-height: 80px;
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
-  transition: all .2s ease-in-out;
-    &:hover {
-      background: $golden;
-      color: $white;
+      border-radius: 50%;
+      border: 3px solid $golden;
+      font-size: 40px;
+      color: $golden;
+      line-height: 80px;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background: $golden;
+        color: $white;
+      }
     }
-}
   }
 }
-.section-paddingTopBottom--background{
+.section-paddingTopBottom--background {
   background-color: $section-paddingTopBottom--background;
 }
 .images {
   margin-top: 70px;
-  > div:nth-of-type(1){
+  > div:nth-of-type(1) {
     margin-bottom: 30px;
   }
   > div > div {
@@ -161,29 +170,29 @@ body { margin: 0 auto;}
       height: auto;
       width: 100%;
       object-fit: cover;
-      }
+    }
     > div {
       padding: 25px 0;
       background: $white;
-      >p:nth-child(1){
+      > p:nth-child(1) {
         @include smallTitle;
         margin-bottom: 0px;
       }
-      >p:nth-child(2){
+      > p:nth-child(2) {
         @include description;
-      }
       }
     }
   }
+}
 .history {
   div {
-    >p:nth-child(1){
+    > p:nth-child(1) {
       @include smallTitle;
     }
-    >p:nth-child(2){
+    > p:nth-child(2) {
       @include smallTitle;
     }
-    >p:nth-child(3){
+    > p:nth-child(3) {
       @include description;
     }
   }
@@ -193,11 +202,11 @@ body { margin: 0 auto;}
 }
 .history--line {
   height: 70px;
-  > div:nth-of-type(1){
+  > div:nth-of-type(1) {
     border-right: 1px solid $section-paddingTopBottom--background;
     min-height: 70px;
   }
-  > div:nth-of-type(2){
+  > div:nth-of-type(2) {
     border-left: 1px solid $section-paddingTopBottom--background;
     min-height: 70px;
   }
@@ -212,19 +221,19 @@ body { margin: 0 auto;}
       object-fit: cover;
       border-radius: 50%;
       border: 10px solid $white;
-      }
-    >p:nth-child(2){
+    }
+    > p:nth-child(2) {
       @include smallTitle;
       font-size: 16px;
       margin: 10px -5px 0;
     }
-    >p:nth-child(3){
+    > p:nth-child(3) {
       @include description;
-      text-transform: capitalize; 
+      text-transform: capitalize;
     }
     div {
-      div{
-        .fa-twitter{
+      div {
+        .fa-twitter {
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -232,14 +241,14 @@ body { margin: 0 auto;}
           font-size: 25px;
           color: $black;
           line-height: 40px;
-          transition: all .2s ease-in-out;
+          transition: all 0.2s ease-in-out;
           &:hover {
             background: $twitter;
             color: $white;
             border-color: $twitter;
           }
         }
-        .fa-facebook-f{
+        .fa-facebook-f {
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -247,14 +256,14 @@ body { margin: 0 auto;}
           font-size: 25px;
           color: $black;
           line-height: 40px;
-          transition: all .2s ease-in-out;
+          transition: all 0.2s ease-in-out;
           &:hover {
             background: $facebook;
             color: $white;
             border-color: $facebook;
           }
         }
-        .fa-pinterest-p{
+        .fa-pinterest-p {
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -262,7 +271,7 @@ body { margin: 0 auto;}
           font-size: 25px;
           color: $black;
           line-height: 40px;
-          transition: all .2s ease-in-out;
+          transition: all 0.2s ease-in-out;
           &:hover {
             background: $pinterest;
             color: $white;
@@ -277,8 +286,8 @@ body { margin: 0 auto;}
   padding: 50px 0;
 }
 .form-background {
-    height: 90vh;
-  background-image: url(../images/MapImage.jpg); 
+  height: 90vh;
+  background-image: url(../images/MapImage.jpg);
   position: relative;
   background-size: cover;
   background-position: center bottom;
@@ -287,7 +296,7 @@ body { margin: 0 auto;}
   div {
     div {
       div {
-        >p:first-child {
+        > p:first-child {
           color: $white;
         }
       }
@@ -297,31 +306,32 @@ body { margin: 0 auto;}
 .form-horizontal {
   margin-top: 80px;
   div {
-      .form-horizontal--margin1 {
-        margin-left: -15px;
-      }
-      .form-horizontal--margin2 {
-        margin-left: 15px;
-        margin-top: 19px;
-      }
+    .form-horizontal--margin1 {
+      margin-left: -15px;
+    }
+    .form-horizontal--margin2 {
+      margin-left: 15px;
+      margin-top: 19px;
+    }
     div {
       div:first-child {
         margin-top: -19px;
         > .form-control {
-        height: 54px;
-        color: $section-paddingTopBottom--background;
-        font-family: $montserrat;
-        font-weight: 700;
+          height: 54px;
+          color: $section-paddingTopBottom--background;
+          font-family: $montserrat;
+          font-weight: 700;
         }
       }
-      div:nth-of-type(2), div:nth-of-type(3) {
+      div:nth-of-type(2),
+      div:nth-of-type(3) {
         > .form-control {
-        margin-top: -10px;
-        height: 54px;
-        color: $section-paddingTopBottom--background;
-        font-family: $montserrat;
-        font-weight: 700;
-        }       
+          margin-top: -10px;
+          height: 54px;
+          color: $section-paddingTopBottom--background;
+          font-family: $montserrat;
+          font-weight: 700;
+        }
       }
     }
     textarea {
@@ -329,7 +339,6 @@ body { margin: 0 auto;}
       font-family: $montserrat;
       font-weight: 700;
       height: 213px !important;
-
     }
     button {
       padding: 25px 65px;
@@ -339,27 +348,25 @@ body { margin: 0 auto;}
       margin-top: 30px;
       color: $white;
     }
-  } 
+  }
 }
 
 footer {
   padding-top: 3vh;
   height: 10vh;
 
-  div{
-
+  div {
     div {
-
-      }
+    }
+    div {
       div {
-        div{
-          > p {
-    color: $footer;
-    font-family: $montserrat;
-    font-size: 14px;
-    padding-top: 1vh;
+        > p {
+          color: $footer;
+          font-family: $montserrat;
+          font-size: 14px;
+          padding-top: 1vh;
         }
-                .fa-twitter{
+        .fa-twitter {
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -368,14 +375,14 @@ footer {
           color: $white;
           background-color: $black;
           line-height: 40px;
-          transition: all .2s ease-in-out;
+          transition: all 0.2s ease-in-out;
           &:hover {
             background: $twitter;
             color: $white;
             border-color: $twitter;
           }
         }
-        .fa-facebook-f{
+        .fa-facebook-f {
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -384,14 +391,14 @@ footer {
           color: $white;
           background-color: $black;
           line-height: 40px;
-          transition: all .2s ease-in-out;
+          transition: all 0.2s ease-in-out;
           &:hover {
             background: $facebook;
             color: $white;
             border-color: $facebook;
           }
         }
-        .fa-pinterest-p{
+        .fa-pinterest-p {
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -400,13 +407,14 @@ footer {
           color: $white;
           background-color: $black;
           line-height: 40px;
-          transition: all .2s ease-in-out;
+          transition: all 0.2s ease-in-out;
           &:hover {
             background: $pinterest;
             color: $white;
             border-color: $pinterest;
-          }          }
-        .fa-google-plus{
+          }
+        }
+        .fa-google-plus {
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -415,51 +423,48 @@ footer {
           color: $white;
           background-color: $black;
           line-height: 40px;
-          transition: all .2s ease-in-out;
+          transition: all 0.2s ease-in-out;
           &:hover {
             background: $googlePlus;
             color: $white;
             border-color: $googlePlus;
-
-      }
-    }
-    } 
-  }
-}
-}
-
-
-
-@media only screen and (max-width: 768px) {
-  .navbar-collapse {
-   ul {
-      overflow: hidden;
-      li {
-        > a {
-            color: $white;
-            transition: none;
-            &:hover {
-                  background: rgba(0,0,0,0.0);
-                  color: $white;
-                  transform: scale(1);
-            }
           }
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-collapse {
+    ul {
+      overflow: hidden;
+      li {
+        > a {
+          color: $white;
+          transition: none;
+          &:hover {
+            background: rgba(0, 0, 0, 0);
+            color: $white;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
   .background {
     margin-top: 4vh;
   }
   .iconsText {
     margin-top: 30px;
     div {
-        .fa {
-    margin-top: 30px;
-  }
+      .fa {
+        margin-top: 30px;
+      }
     }
   }
   .images {
-    > div:nth-of-type(1){
+    > div:nth-of-type(1) {
       margin-bottom: 0px;
     }
     > div > div {
@@ -495,11 +500,11 @@ footer {
       }*/
     }
   }
- .history--line {
-  display: none;
- }
+  .history--line {
+    display: none;
+  }
 
-   .logos{
+  .logos {
     div {
       div {
         div {
@@ -511,26 +516,26 @@ footer {
       }
     }
   }
-         .flexbox {
+  .flexbox {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    .flexbox--1{
-    order: 1;
-    flex: 1 0 100%;
+    .flexbox--1 {
+      order: 1;
+      flex: 1 0 100%;
     }
-    .flexbox--2{
-    order: 2;
-    flex: 1 0 100%;
+    .flexbox--2 {
+      order: 2;
+      flex: 1 0 100%;
     }
-    .flexbox--3{
-    order: 3;
-    flex: 1 0 100%;
-   }
- }
-.form-horizontal {
-  margin-top: 60px;
-  div {
+    .flexbox--3 {
+      order: 3;
+      flex: 1 0 100%;
+    }
+  }
+  .form-horizontal {
+    margin-top: 60px;
+    div {
       .form-horizontal--margin1 {
         margin-left: 0px;
       }
@@ -541,36 +546,35 @@ footer {
     }
   }
 
-   footer {
-  div{
+  footer {
     div {
-       .flexbox {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    .flexbox--1{
-    order: 1;
-    flex: 1 0 100%;
-    }
-    .flexbox--2{
-    order: 2;
-    flex: 1 0 100%;
-    }
-    .flexbox--3{
-    order: 3;
-    flex: 1 0 100%;
-   }
- }
       div {
-        div:first-child{
-          margin-top: 15px;
-          text-align: center;
+        .flexbox {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          .flexbox--1 {
+            order: 1;
+            flex: 1 0 100%;
+          }
+          .flexbox--2 {
+            order: 2;
+            flex: 1 0 100%;
+          }
+          .flexbox--3 {
+            order: 3;
+            flex: 1 0 100%;
+          }
+        }
+        div {
+          div:first-child {
+            margin-top: 15px;
+            text-align: center;
+          }
         }
       }
     }
   }
-}
-
 }
 
 /*  .history {
@@ -584,28 +588,28 @@ footer {
       right: 0%;
     }
   }*/
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {
   .iconsText {
     margin-top: 30px;
     div {
-        .fa {
-    margin-top: 30px;
-  }
+      .fa {
+        margin-top: 30px;
+      }
     }
   }
   .history--line {
-  height: 150px;
-    > div:nth-of-type(1){
-    border-right: 1px solid $section-paddingTopBottom--background;
-    min-height: 150px;
+    height: 150px;
+    > div:nth-of-type(1) {
+      border-right: 1px solid $section-paddingTopBottom--background;
+      min-height: 150px;
     }
-    > div:nth-of-type(2){
-    border-left: 1px solid $section-paddingTopBottom--background;
-    min-height: 150px;
+    > div:nth-of-type(2) {
+      border-left: 1px solid $section-paddingTopBottom--background;
+      min-height: 150px;
+    }
   }
-}
-  
-  .logos{
+
+  .logos {
     div {
       div {
         div {
@@ -618,36 +622,33 @@ footer {
     }
   }
 
-
-
- footer {
-  div{
+  footer {
     div {
-       .flexbox {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    .flexbox--1{
-    order: 1;
-    flex: 1 0 100%;
-    }
-    .flexbox--2{
-    order: 2;
-    flex: 1 0 100%;
-    }
-    .flexbox--3{
-    order: 3;
-    flex: 1 0 100%;
-   }
- }
       div {
-        div:first-child{
-          margin-top: 15px;
-          text-align: center;
+        .flexbox {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          .flexbox--1 {
+            order: 1;
+            flex: 1 0 100%;
+          }
+          .flexbox--2 {
+            order: 2;
+            flex: 1 0 100%;
+          }
+          .flexbox--3 {
+            order: 3;
+            flex: 1 0 100%;
+          }
+        }
+        div {
+          div:first-child {
+            margin-top: 15px;
+            text-align: center;
+          }
         }
       }
     }
   }
-}
-
 }
