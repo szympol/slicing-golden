@@ -10,7 +10,7 @@ Please follow instructions below, if you are willing to run the project locally.
 
 ### Prerequisites
 
-Both [Git](https://git-scm.com/downloads) and [Node](https://nodejs.org/en/download/) are required to run this project locally. 
+Both [Git](https://git-scm.com/downloads) and [Node](https://nodejs.org/en/download/) are required to run this project locally.
 
 ### Installing
 
