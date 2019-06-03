@@ -34,7 +34,9 @@ $section-paddingTopBottom--background: #f7f7f7;
   font-weight: 700;
   text-transform: uppercase;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   font-family: $openSans;
