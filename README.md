@@ -1,3 +1,5 @@
+[<img src="https://github.com/szympol/slicing-golden/blob/master/images/main.JPG?raw=true" align="right" alt="desert" width="40%">](https://github.com/szympol/slicing-golden/blob/master/images/main.JPG)
+
 # Slicing Golden Theme
 
 Slicing a project of a website in Photoshop from PSD to Responsive Website. Based on [PSD Golden template](https://github.com/szympol/slicing-golden/blob/master/images/zadanie-golden.psd).
